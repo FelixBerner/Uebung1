@@ -1,5 +1,4 @@
 'use strict';
-
 app.controller('ListeCtr', ['$scope', '$routeParams',
   function($scope) {
     //Personenliste erstellen
@@ -19,13 +18,10 @@ app.controller('ListeCtr', ['$scope', '$routeParams',
     }
   }
 ]);
-
 app.controller('InhaltCtrl', function($scope, $http) {
   $http.get('inhalt/jumbos.json').then(function(contentResponse) {
     console.log(contentResponse);
     $scope.contents = contentResponse.data.jumbos;
-
-
     $scope.next = function(e) {
       console.log('next');
       $('.carousel').carousel('next');
@@ -34,9 +30,7 @@ app.controller('InhaltCtrl', function($scope, $http) {
       console.log('previous');
       $('.carousel').carousel('prev');
     }
-
     $('.carousel').carousel();
-
     $scope.active = function(first) {
       if (first) {
         return "active";
@@ -44,13 +38,5 @@ app.controller('InhaltCtrl', function($scope, $http) {
         return "";
       }
     }
-
   });
-
 });
-
-
-
-
-
-

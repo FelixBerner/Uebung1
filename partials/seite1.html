@@ -1,17 +1,3 @@
-<style rel="stylesheet">
-h3 {
-  color: #666;
-  padding-top: 90px;
-  font-size: 52px;
-}
-.item {
-  background: #333;
-  text-align: center;
-  height: 300px;
-}
-</style>
-
-
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
   <ol class="carousel-indicators">
@@ -19,58 +5,20 @@ h3 {
     <li data-target="#myCarousel" data-slide-to="1"></li>
     <li data-target="#myCarousel" data-slide-to="2"></li>
   </ol>
-
-  <!-- <div class="carousel-inner">
-    <div class="active item">
-      <div class="carousel-caption">
-        <h3>{{contents[0].head}}</h3>
-        <p>{{contents[0].body}}</p>
-        <p>{{contents[0].text}}</p>
-        <p>Seite1</p>
-      </div>
-    </div>
-    <div class="item">
-      <div class="carousel-caption">
-        <h3>{{contents[1].head}}</h3>
-        <p>{{contents[1].body}}</p>
-        <p>{{contents[1].text}}</p>
-        <p>Seite2</p>
-        <p></p>
-      </div>
-    </div>
-
-    <div class="item">
-      <div class="carousel-caption">
-        <h3>{{contents[2].head}}</h3>
-        <p>{{contents[2].body}}</p>
-        <p>{{contents[2].text}}</p>
-        <p>Seite3</p>
-      </div>
-    </div>
-  </div> -->
-
   <div class="carousel-inner">
-      <div ng-repeat="item in contents" ng-class="{active: $first}" class="item">
-        <div class="carousel-caption">
-          <h3>{{item.head}}</h3>
-          <p>{{item.body}}</p>
-          <p>{{item.text}}</p>
-          <p>Seite {{$index + 1}}</p>
-        </div>
+    <div ng-repeat="item in contents" ng-class="{active: $first}" class="item">
+      <div class="carousel-caption">
+        <h3>{{item.head}}</h3>
+        <p>{{item.body}}</p>
+        <p>{{item.text}}</p>
+        <p>Seite {{$index + 1}}</p>
       </div>
+    </div>
   </div>
-
-
-
-
-
-
   <a class="carousel-control left" ng-click="prev()">
     <span class="glyphicon glyphicon-chevron-left"></span>
   </a>
   <a class="carousel-control right" ng-click="next()">
     <span class="glyphicon glyphicon-chevron-right"></span>
   </a>
-
-
 </div>
