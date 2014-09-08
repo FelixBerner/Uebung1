@@ -1,0 +1,42 @@
+
+  <form class="form" role="form">
+    <div class="container">
+      <div class="row">
+        <label for"inpputVorname" class="col-sm-2 control-label">Vorname</label> 
+        <div class="col-xs-3"> <input class="form-control" id="inputVorname" name="vorname" type="text" size="30" maxlength="30" ng-model="newVName"> </div> 
+
+     </div>
+
+     <div class="row">
+      <label for"inputNachname" class="col-sm-2 control-label">Nachname</label>
+      <div class="col-xs-3"><input class="form-control" id="inputNachname" name="nachname" type="text" size="30" maxlength="30" ng-model="newNName"></div>
+     </div>
+
+     <div class="row">
+      <label for"inputGeburtstag" class="col-sm-2 control-label">Geburtstag</label>
+      <div class="col-xs-3"><input class="form-control" id="inputGeburtstag" name="geburtstag" type="date" size="30" maxlength="30" ng-model="newGebDat"></div>
+    </div>
+</form>
+
+    <div class="container">
+      <button ng-click="addPerson()" type="button" class=" btn btn-lg btn-primary">Add</button>
+    </div>
+  
+
+
+    <div class="container">
+      <table class="table table-bordered">
+      <tr>
+        <th>Vorname</th>
+        <th>Nachname</th>
+        <th>Geburtstag</th>
+      </tr>
+      <tr ng-repeat="x in persons">
+        <td>{{x.vorName}}</td> 
+        <td>{{x.nachName}}</td>
+        <td>{{x.gebDatum}}</td>
+      </tr>
+
+
+      </table>
+    </div>

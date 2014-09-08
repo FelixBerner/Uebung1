@@ -1,0 +1,19 @@
+{
+  "jumbos": [{
+    "head": "Hallo",
+    "body": "Das ist eine Beschreibung...",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, ed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. ",
+    "number": "0"
+  }, {
+    "head": "Jumbos2",
+    "body": "Das ist auch eine Beschreibung...",
+    "text": "Hier ein Märchen, das diesmal der Wahrheit entspricht: Es waren einmal sieben Zwerge, die lebten hinter den sieben Bergen. Tag für Tag suchten sie im Bergwerk nach Gold. Jeder der Zwerge war rechtschaffen, fleißig und achtete den Anderen. Wenn einer von ihnen müde wurde, so ruhte er sich aus, ohne dass die Anderen erzürnten. Wenn es einem von ihnen an etwas mangelte, so gaben die Anderen bereitwillig und gerne. Abends, wenn das Tagewerk geschafft war, aßen sie einträchtig ihr Brot und gingen zu Bett. Am siebten Tage jedoch ruhten sie.",
+    "number": "1"
+  }, {
+    "head": "jumbos3",
+    "body": "Und noch eine Beschreibung...",
+    "text": "blablablablabla Text blablablabla",
+    "number": "2"
+
+  }]
+}
